@@ -3,8 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logicon from "../assets/steam.png";
-import Logo from "../assets/Logo (5).png";
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Logo from "../assets/avatarnew.png";
 
 const Header = () => {
   return (
@@ -24,8 +23,14 @@ const Header = () => {
                     <Nav.Link href="#link">LEADERBOARD</Nav.Link>
                     <Nav.Link href="#link">ABOUT</Nav.Link>
                 </Nav>
+                <div className='login-button login-button-mb-view'>
+                    <button>
+                        <img src={logicon}/>
+                        <a href=''>Login</a>
+                    </button>
+                </div>
                 </Navbar.Collapse>
-                <div className='login-button'>
+                <div className='login-button login-button-desktop-view'>
                     <button>
                         <img src={logicon}/>
                         <a href=''>Login</a>

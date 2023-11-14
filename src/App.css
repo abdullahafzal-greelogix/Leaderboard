@@ -1,11 +1,23 @@
 body{
   background-color: #070A2F !important;
 }
+
+/* header */
+.navbar-toggler-icon{
+  background-image: url(./assets/barr.png) !important;
+  background-size: cover !important;
+  max-width: 35px;
+}
+.navbar-toggler:focus{
+  background-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
 .navbar{
   padding: 20px 0px !important;
 }
 .navbar-brand img{
-  max-width: 120px !important;
+  max-width: 50px !important;
   width: 100%;;
 }
 .navbar-expand-lg .navbar-nav .nav-link{
@@ -119,9 +131,9 @@ font-family: 'Inter', sans-serif;
     border-radius: 50%;
     position: absolute;
     top: -186px;
-    filter: blur(120px) !important;
+    filter: blur(60px) !important;
     -webkit-filter: blur(8px);
-    left: -86px;
+    left: -55px;
     z-index: -1;
 }
 
@@ -160,4 +172,87 @@ font-family: 'Inter', sans-serif;
   margin-bottom: 4px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+}
+
+/* table list */
+.table-list-design{
+  margin: 80px 0px 0px;
+  border:1px solid #FFFFFF1A !important;
+  border-radius: 12px;
+}
+.table-list-data{
+  border: 1px solid #FFFFFF1A !important;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 0px !important;
+}
+.table-list-data thead th{
+  background-color: #070A2F !important;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+.table-list-data tbody td{
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  background-color:#FFFFFF1A;
+}
+.table-list-img{
+  max-width: 28px;
+  width: 100%;
+  margin-right: 10px;
+}
+.prize-design{
+background:#FFFFFF1A;
+padding: 6px;
+border-radius: 30px;
+font-size: 16px;
+}
+.prize-icon{
+  max-width: 15px;
+  width: 100%;
+  margin-right: 8px;
+  position: relative;
+  top: -2px;
+}
+.login-button-mb-view{
+  display: none;
+}
+@media screen and (max-width: 992px){
+  .login-button-mb-view{
+    display: block;
+  }
+  .login-button-desktop-view{
+    display: none;
+  }
+  .login-button-mb-view{
+    margin-top: 20px;
+  }
+  .row-design .column-grid-design:nth-child(2){
+    top: 0 !important;
+  }
+  .column-grid-design{
+    margin-bottom: 15px;
+  }
+  .row-design .column-grid-design:nth-child(3){
+    margin-bottom: 0px !important;
+  }
+  .row-design .column-grid-design:nth-child(2)::after{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px){
+  .web-head-content h1 {
+    font-size: 32px;
+  }
+  .card-header h2 {
+    font-size: 24px;
+  }
+  .card-header p {
+    color: white;
+    font-size: 14px;
+  }
 }
