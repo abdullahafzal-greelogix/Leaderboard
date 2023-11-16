@@ -21,7 +21,7 @@ function Timer() {
         <img src={Timerimg}/>
         <h6>ends in</h6>
       <div className='timer-digits'>
-        <span>{days}</span>:<span>{hours}</span>:<span>{minutes}</span>:<span>{seconds}</span>
+        <span>{days}</span><span>{hours}</span><span>{minutes}</span><span>{seconds}</span>
       </div>
       <h6>updated 10 mins ago</h6>
     </div>

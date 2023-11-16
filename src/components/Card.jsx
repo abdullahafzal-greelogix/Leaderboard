@@ -4,13 +4,10 @@ import Cardimg from "../assets/king.png"
 import Earnimg from "../assets/Coin.png"
 import Yellowking from "../assets/yellowking.png"
 import Pinking from "../assets/pinking.png"
-import Table from 'react-bootstrap/Table';
-import Limgone from "../assets/listimgone.png"
-import Limgtwo from "../assets/listimgtwo.png"
-import Limgthree from "../assets/listimgthree.png"
-import Limgfour from "../assets/listimgfour.png"
-import Limgfive from "../assets/listfive.png"
-import Triangleimg from "../assets/triangle.png"
+import Circleimg from "../assets/circleone.png"
+import Circleimgg from "../assets/circletwo.png"
+import Circleimggg from "../assets/circlethree.png"
+
 
 
 // const data=[
@@ -43,74 +40,71 @@ import Triangleimg from "../assets/triangle.png"
 const Card = () => {
     const [Carddata, setTableItems] = useState([
         {
-            Cardimage:Cardimg,
-            Cardhead:"kingqueen",
-            Cardpara:"Deposited: $2,040,060",
-            Earnimage:Earnimg,
-            Earnhead:"EARN",
-            Earnprice:"5,000",
+            Cardimage:Circleimg,
+            Cardhead:"mek001",
+            Cardpara:"Wagered:",
+            Boldpara:" $1,284.78",
+            Cardprize:"$800.00",
         },
         {
-            Cardimage:Yellowking,
+            Cardimage:Circleimgg,
             Cardhead:"JohnDoe",
-            Cardpara:"Deposited: $2,948,430",
-            Earnimage:Earnimg,
-            Earnhead:"EARN",
-            Earnprice:"20,000",
+            Cardpara:"Wagered:",
+            Boldpara:" $1,284.78",
+            Cardprize:"$2,000.00",
         },
         {
-            Cardimage:  Pinking,
-            Cardhead:"sniper023",
-            Cardpara:"Deposited: $2,721,980",
-            Earnimage:Earnimg,
-            Earnhead:"EARN",
-            Earnprice:"10,000",
+            Cardimage:Circleimggg,
+            Cardhead:"knight_pen",
+            Cardpara:"Wagered:",
+            Boldpara:" $1,284.78",
+            Cardprize:"$1,200.00",
         }
     ])
 
-    const [Tabledata, setTabledata] = useState([
-        {
-            prizeimg:Triangleimg,
-            Limg:Limgone,
-            Rank:4,
-            User:"Ave",
-            Deposited:"$458,283",
-            Prizes:"1,050",
-        },
-        {
-            prizeimg:Triangleimg,
-            Limg:Limgtwo,
-            Rank:5,
-            User:"Blank",
-            Deposited:"$452,189",
-            Prizes:"750",
-        },
-        {
-            prizeimg:Triangleimg,
-            Limg:Limgthree,
-            Rank:6,
-            User:"Sunfire023",
-            Deposited:"$428,384",
-            Prizes:"750",
-        },
-        {
-            prizeimg:Triangleimg,
-            Limg:Limgfive,
-            Rank:7,
-            User:"nftJoe",
-            Deposited:"$400,000",
-            Prizes:"500",
-        },
-        {
-            prizeimg:Triangleimg,
-            Limg:Limgfour,
-            Rank:8,
-            User:"No_Name",
-            Deposited:"$380,020",
-            Prizes:"450",
-        },
+    // const [Tabledata, setTabledata] = useState([
+    //     {
+    //         prizeimg:Triangleimg,
+    //         Limg:Limgone,
+    //         Rank:4,
+    //         User:"Ave",
+    //         Deposited:"$458,283",
+    //         Prizes:"1,050",
+    //     },
+    //     {
+    //         prizeimg:Triangleimg,
+    //         Limg:Limgtwo,
+    //         Rank:5,
+    //         User:"Blank",
+    //         Deposited:"$452,189",
+    //         Prizes:"750",
+    //     },
+    //     {
+    //         prizeimg:Triangleimg,
+    //         Limg:Limgthree,
+    //         Rank:6,
+    //         User:"Sunfire023",
+    //         Deposited:"$428,384",
+    //         Prizes:"750",
+    //     },
+    //     {
+    //         prizeimg:Triangleimg,
+    //         Limg:Limgfive,
+    //         Rank:7,
+    //         User:"nftJoe",
+    //         Deposited:"$400,000",
+    //         Prizes:"500",
+    //     },
+    //     {
+    //         prizeimg:Triangleimg,
+    //         Limg:Limgfour,
+    //         Rank:8,
+    //         User:"No_Name",
+    //         Deposited:"$380,020",
+    //         Prizes:"450",
+    //     },
         
-    ])
+    // ])
     
   return (
     <div className='card-wrapper'>
@@ -124,12 +118,10 @@ const Card = () => {
                         </div>
                         <div className='card-header'>
                             <h2>{e.Cardhead}</h2>
-                            <p>{e.Cardpara}</p>
+                            <p>{e.Cardpara}<span>{e.Boldpara}</span></p>
                         </div>
-                        <div className='earn-detail'>
-                            <img src={e.Earnimage}/>
-                            <h4>{e.Earnhead}</h4>
-                            <h2>{e.Earnprice}</h2>
+                        <div className='card-prizes'>
+                            <h2>{e.Cardprize}</h2>
                         </div>
                     </div>
                 </Col>
@@ -137,7 +129,7 @@ const Card = () => {
             </Row>
         </Container>
 
-        <Container>
+        {/* <Container>
             <Row>
                 <Col lg={12} md={12} sm={12}>
                     <div className='table-list-design'>
@@ -164,7 +156,7 @@ const Card = () => {
                     </div>
                 </Col>
             </Row>
-        </Container>
+        </Container> */}
     </div>
 
   

@@ -1,9 +1,10 @@
 import React from 'react'
-import Circleimg from "../assets/circledesign.png"
+import Bgimg from "../assets/BG.png"
 
 const Circle = () => {
   return (
-    <div className='back-circle-design'>
+    <div className='Backimg-design'>
+      <img src={Bgimg}/>
     </div>
   )
 }
