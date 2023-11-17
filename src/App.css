@@ -1,6 +1,8 @@
 body{
   /* background:linear-gradient(180deg, #3B2300 0%, #091129 100%); */
 }
+
+
 /* versions set */
 .version1-design{
   background-image: url(./assets//bannerv1.png)  !important;
@@ -395,15 +397,75 @@ font-size: 16px;
     font-size: 14px;
   }
 }
-
-/* .Backimg-design{
-  height: 100%;
-  width: 100%;
+.version1-design .column-grid-design:nth-child(1):before {
+  -webkit-animation: mover 1.5s infinite  alternate;
+  animation: mover 1.5s infinite  alternate;
+}
+.version1-design .column-grid-design:nth-child(1):before {
+  -webkit-animation: mover 1.5s infinite  alternate;
+  animation: mover 1.5s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+.version1-design .column-grid-design:nth-child(3):after {
+  -webkit-animation: mover 1.5s infinite  alternate;
+  animation: mover 1.5s infinite  alternate;
+}
+.version1-design .column-grid-design:nth-child(3):after {
+  -webkit-animation: mover 1.5s infinite  alternate;
+  animation: mover 1.5s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-25px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-25px); }
+}
+/* dice-animation */
+.dice-animation{
+  position: absolute;
+    top: 14%;
+    left: 0;
+}
+.dice-animation img{
+  height: 400px;
+    width: 400px;
+}
+/* Basket-animation */
+.Basket-animation{
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+.Basket-animation img{
+  height: 500px;
+    width: 500px;
+}
+/* Coin-animation */
+.Coin-animation{
   position: absolute;
   top: 0;
   left: 0;
 }
-.Backimg-design img{
-  height: 100%;
-  width: 100%;
-} */
+.Coin-animation img{
+  height: 500px;
+  width: 500px;
+}
+/* Rocket-animation */
+.Rocket-animation{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Rocket-animation img{
+  height: 500px;
+  width: 500px;
+}

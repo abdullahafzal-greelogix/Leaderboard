@@ -17,6 +17,7 @@ const Homev1 = () => {
         <Timer/>
         <Tablelist/>
     </div>
+
   )
 }
 

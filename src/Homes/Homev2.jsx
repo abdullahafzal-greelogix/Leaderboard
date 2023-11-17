@@ -5,6 +5,8 @@ import Logos from '../components/Logos'
 import Timer from '../components/Timer'
 import Card from '../components/Card'
 import Tablelist from '../components/Tablelist'
+import Coinani from '../components/Coinani'
+import Rocketani from '../components/Rocketani'
 
 const Homev2 = () => {
   return (
@@ -15,6 +17,8 @@ const Homev2 = () => {
         <Card/>
         <Timer/>
         <Tablelist/>
+        <Coinani/>
+        <Rocketani/>
     </div>
   )
 }

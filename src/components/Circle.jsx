@@ -1,11 +1,12 @@
 import React from 'react'
-import Bgimg from "../assets/BG.png"
+import Rocketjson from "../assets/rocket.json"
 
 const Circle = () => {
+
   return (
-    <div className='Backimg-design'>
-      <img src={Bgimg}/>
-    </div>
+<div>
+  
+</div>
   )
 }
 

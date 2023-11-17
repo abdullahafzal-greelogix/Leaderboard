@@ -5,6 +5,8 @@ import Logos from '../components/Logos'
 import Timer from '../components/Timer'
 import Card from '../components/Card'
 import Tablelist from '../components/Tablelist'
+import Home3animation from '../components/Home3animation'
+import Basketani from '../components/Basketani'
 
 const Homev3 = () => {
   return (
@@ -15,6 +17,8 @@ const Homev3 = () => {
         <Card/>
         <Timer/>
         <Tablelist/>
+        <Home3animation/>
+        <Basketani/>
     </div>
   )
 }
