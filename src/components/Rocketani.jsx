@@ -3,7 +3,7 @@ import Rocektgif from "../assets/rocket.gif"
 
 const Rocketani = () => {
   return (
-    <div className='Basket-animation'>
+    <div className='Rocket-animation'>
     <img src={Rocektgif} alt="My GIF" />
 </div>
   )

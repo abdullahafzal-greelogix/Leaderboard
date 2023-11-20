@@ -5,7 +5,8 @@ import Logos from '../components/Logos'
 import Timer from '../components/Timer'
 import Card from '../components/Card'
 import Tablelist from '../components/Tablelist'
-import Background from "../assets/bannerv1.png"
+import Gungif from '../components/Gungif'
+import Bomb from '../components/Bomb'
 
 const Homev1 = () => {
   return (
@@ -16,6 +17,8 @@ const Homev1 = () => {
         <Card/>
         <Timer/>
         <Tablelist/>
+        <Gungif/>
+        <Bomb/>
     </div>
 
   )
